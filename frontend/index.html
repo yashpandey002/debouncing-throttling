@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Debouncing & Throtlling</title>
+        <script defer src="./app.js"></script>
+        <style>
+            *:focus {
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input
+                type="text"
+                id="num1"
+                oninput="debounceInput()"
+                placeholder="First number"
+                autocomplete="off"
+            />
+            <input
+                type="text"
+                id="num2"
+                oninput="debounceInput()"
+                placeholder="Second number"
+                autocomplete="off"
+            />
+        </form>
+        <div id="result"></div>
+    </body>
+</html>
